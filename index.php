@@ -20,7 +20,7 @@ $meta = array(
         <meta name="description" content="<?php echo $meta['description'];?>">
         <meta name="author" content="KAGIBI">
 
-        <meta property="og:image" content="http://www.lekagibi.fr/images/logo.jpg">
+        <meta property="og:image" content="http://www.lekagibi.fr/images/logo.png">
         <meta property="og:title" content="<?php echo $meta['title'];?>" >
 
         <meta property="og:description" content="<?php echo $meta['description'];?>">
@@ -36,6 +36,8 @@ $meta = array(
 
         <!-- Custom CSS -->
         <link href="css/grayscale.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
