@@ -2,7 +2,7 @@
 
 $meta = array(
     'title' => 'Bienvenue au Kagibi - Bureau partagé à Nancy',
-    'description' => 'Le Kagibi est un espace de bureau partagés par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le coworking et la maison, le Kagibi réunit le meilleur des deux mondes.',
+    'description' => 'Le Kagibi est un espace de bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.',
     'keywords' => 'coworking, bureau, indépendants, freelance, location, nancy, lorraine'
     );
 
@@ -11,7 +11,8 @@ $meta = array(
     <html lang="en">
 
     <head>
-
+        <meta property="og:url" content="http://www.lekagibi.fr">
+        <link rel="canonical" href="http://www.lekagibi.fr">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
