@@ -7,10 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Le Kagibi est un espace de bureau partagés par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le coworking et la maison, le Kagibi réunit le meilleur des deux mondes.">
+    <meta name="author" content="Kagibi">
+    <meta name="keywords" content="coworking, bureau, indépendants, freelance, location, nancy, lorraine">
 
-    <title>The Big Picture - Start Bootstrap Template</title>
+    <title>Bienvenue au Kagibi - Bureau partagé à Nancy</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
