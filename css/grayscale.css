@@ -372,7 +372,14 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
-
+#about svg {
+    display:none;
+}
+@media(min-width:767px) {
+    #about svg {
+        display:block;
+    }
+}
 footer {
     padding: 50px 0;
 }
@@ -406,7 +413,9 @@ body {
 }
 
 
+
 svg {
     fill:white;
+    width: 100%;
 }
 
