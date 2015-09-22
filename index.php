@@ -1,3 +1,22 @@
+<?php 
+$MENU = array(
+    array(
+        "lib" => 'Nous rejoindre',
+        "w" => 'recrutement'
+    ),
+    array(
+        "lib" => 'Contact',
+        "w" => 'contact'
+    ),
+    array(
+        "lib" => 'Facebook',
+        "url" => 'https://www.facebook.com/Le-Kagibi-384622661685366'
+    )
+    
+);
+
+$w = isset($_GET['w']) ? $_GET['w'] : false;
+?>
 <!DOCTYPE html>
 <html class="full" lang="en">
 <!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
@@ -36,25 +55,21 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a href="/" class="logo-small"><?php readfile('images/logo.svg');?></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <?php foreach($MENU as $menu){if(empty($menu['url'])) { $menu['url'] = $menu['w'].'.html';}?>
                     <li>
-                        <a href="#">About</a>
+                        <a <?php echo !empty($menu['w']) && $menu['w'] == $w ? 'class="selected"' : '';?> href="<?php echo $menu['url'];?>"><?php echo $menu['lib'];?></a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                    <?php }?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -62,17 +77,25 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <h1>The Big Picture</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+    <?php if($w) {
+        include $w.'.php';
+    }else {?>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <center>Bienvenue au </center>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="logo-big"><?php readfile('images/logo.svg');?></div>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
+        <!-- /.container -->
+    <?php }?>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

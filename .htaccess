@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME}  !-f
+RewriteRule ^(.*).html$ index.php?w=$1 [L,QSA]
