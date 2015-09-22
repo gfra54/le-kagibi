@@ -19,7 +19,7 @@ $meta = array(
         <meta name="description" content="<?php echo $meta['description'];?>">
         <meta name="author" content="KAGIBI">
 
-        <meta property="og:image" content="/images/logo.jpg">
+        <meta property="og:image" content="http://www.lekagibi.fr/images/logo.jpg">
         <meta property="og:title" content="<?php echo $meta['title'];?>" >
 
         <meta property="og:description" content="<?php echo $meta['description'];?>">
