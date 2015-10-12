@@ -284,6 +284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0014a3c7', e
 
 .content-section {
     padding-top: 100px;
+    min-height: 100%;
 }
 
 .download-section {

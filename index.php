@@ -2,7 +2,7 @@
 
 $meta = array(
     'title' => 'Bienvenue au Kagibi - Bureau partagé à Nancy',
-    'description' => 'Le Kagibi est un espace de bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.',
+    'description' => 'Le Kagibi est un presqu\'espace de coworking, bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfèrent ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.',
     'keywords' => 'coworking, bureau, indépendants, freelance, location, nancy, lorraine'
     );
 
@@ -97,7 +97,7 @@ $meta = array(
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <h1 class="brand-heading"><?php readfile('images/logo.svg');?></h1>
-                            <p class="intro-text">Un bureau partagé<br>par des freelances et des télé-travailleurs<br>en plein coeur de Nancy.</p>
+                            <p class="intro-text">Presqu'espace de coworking<br>en plein coeur de Nancy.</p>
                             <a href="#about" class="btn btn-circle page-scroll">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -112,18 +112,19 @@ $meta = array(
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2><?php readfile('images/logo.svg');?></h2>
                     <h2>En savoir plus</h2>
-                    <p>Ouvert en 2014 par un collectif de freelance, télé-travailleurs et gérants de petites entreprises, le Kagibi est un espace de bureaux partagés installé à Nancy.</p>
+                    <p>Ouvert en 2014 par un collectif de freelances, télé-travailleurs et gérants de petites entreprises, le Kagibi est un espace de bureaux partagés installé à Nancy.</p>
                     <p>Le Kagibi n'est pas qu'un bureau, et n'est pas totalement un espace de coworking. Il est pour l'instant occupé par 3 architectes, 3 graphistes, un designer web et un ingénieur.
                     </div>
                 </div>
             </section>
 
-            <section id="join-us" class="container content-section text-center">
+            <section id="join-us" class="container content-section">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <h2>Rejoignez-nous</h2>
-                        <p>A l'heure actuelle, notre collectif se sent un peu à l’étroit dans ses 3m². Nous sommes de fait à la recherche d'ici janvier d'un local de plus de 100m² susceptible de nous accueillir tous quelque part dans le centre de Nancy, et de gens cool qui ont envie de nous rejoindre.
-                            <p>Donc, si tu es un riche propriétaire qui a des m² en trop à louer pas cher ou si tu es un travailleur en pyjama chez toi, n'hésite pas à <a href="#contact">nous contacter</a>.
+                        <p>A l'heure actuelle, notre collectif se sent un peu à l’étroit dans ses 3m².<br>
+                        Nous sommes de fait à la recherche d'ici janvier d'un local de plus de 100m² susceptible de nous accueillir tous quelque part dans le centre de Nancy, et de gens cool qui ont envie de nous rejoindre.<br>
+                            <p>Donc, si tu&nbsp;es un riche propriétaire qui a des m² en trop à louer pas cher ou si tu&nbsp;es un travailleur en pyjama chez toi, n'hésite pas à <a href="#contact">nous contacter</a>.
                                 Pour info, le montant du loyer moyen par personne est aujourd'hui autour de 120€ et permet l’accès à chacun d'un espace de bureau perso, une salle de réunion (et de pause), une cuisine, etc...</p>
                                 <p>A tout bientôt<br>
                                     <b><i>La direction</i></b>.</p>
@@ -164,19 +165,33 @@ $meta = array(
                 </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Map Section -->
     <div id="map">
 
         <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/gfra54.ngodl51g/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoiZ2ZyYTU0IiwiYSI6ImNpZXZlNWp4MTAwYjh0Ym0wa2swaWNtZmQifQ.xaaRxB4KJtY-sDFPE2qNhw'></iframe>
 
     </div>
+    </section>
+
+    <!-- Map Section -->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p><small>Venez au Kagibi</small></p>
+            <p><small>
+
+            <div itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="http://lekagibi.fr/"><div itemprop="name"><strong>Le Kagibi</strong></div></a>
+                <div style="display:none" itemprop="description">Le Kagibi est un espace de bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.</div>
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">3, rue GrandVille</span><br>
+                <span itemprop="postalCode">54000</span>
+                <span itemprop="addressLocality">Nancy</span>
+                (<span itemprop="addressCountry">France</span>)
+                </div>
+            </div>
+
+
+            </small></p>
         </div>
     </footer>
 
@@ -192,6 +207,16 @@ $meta = array(
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68704417-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 
 </html>
