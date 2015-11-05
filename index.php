@@ -1,5 +1,7 @@
 <?php 
 
+
+
 $meta = array(
     'title' => 'Bienvenue au Kagibi - Espace de Co-Working et de bureau partagé à Nancy',
     'description' => 'Le Kagibi est un presqu\'espace de coworking, bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfèrent ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.',
