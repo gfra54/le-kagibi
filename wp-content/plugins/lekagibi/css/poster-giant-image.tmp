@@ -1,0 +1,86 @@
+.poster-giant-image .poster-giant-image-legend {
+	background: #221E1F;
+	color: white;
+	font-size: 90%;
+	font-family: sans-serif;
+	padding: 1%;
+	position: relative;
+	font-size: 70%;
+	margin-bottom: 1.3333%;
+}
+
+.poster-giant-image-quote {
+	display: none;
+}
+@media screen and (min-width: 77.5em) {
+	.poster-giant-image .poster-giant-image-legend {
+		position: absolute;
+		bottom: -2%;
+		left: 2%;
+		z-index: 2;
+		margin-bottom: 0;
+	}
+
+	.poster-giant-image IMG{
+		display: block;
+	}
+
+	.poster-giant-image {
+		margin-bottom: 1.3333%;
+		position: relative;
+	}
+
+	.poster-image{
+		position: relative;
+		width: 120%;
+		height: 0;
+		padding-bottom: 70%;
+		margin-left: -10%;
+		border: 15px solid #eee;
+	}
+
+	.poster-image .poster-giant-image-wrapper{
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.poster-image:before, .poster-image:after {
+		content: '';
+		display: block;
+		width:35%;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.poster-image:before {
+		left:0;
+	}
+
+	.poster-image:after {
+		right:0;
+	}
+	.poster-giant-image-quote {
+		display: block;
+		position: absolute;
+		z-index: 9999;
+		width: 20%;
+		top: 10%;
+		right: 5%;
+		text-align: center;
+		color:white;
+		background: rgba(0,0,0,0.3);
+	}
+	.poster-giant-image-quote:before, .poster-giant-image-quote:after {
+		content: '';
+		display: block;
+		width: 50%;
+		margin:5% auto;
+		border-bottom: 1px solid white;
+	}
+}

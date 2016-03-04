@@ -1,0 +1,24 @@
+.alert {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	padding: 1%;
+	width: 100%;
+	left: 0;
+	font-size: 85%;
+}
+
+.alert-danger {
+	background: #D3958A;
+	color: darkred;
+}
+
+.alert-warning {
+	background: #EDB866;
+	color: #8B3E00;
+}
+
+.alert-success {
+	background: #ACED66;
+	color: #0B8B00;
+}
