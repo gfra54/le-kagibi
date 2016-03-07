@@ -21,7 +21,6 @@
         <section id="about" class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2><?php logo_kagibi();?></h2>
                     <h2>En savoir plus</h2>
                     <p><?php echo get_page_content('en-savoir-plus');?></p>
                     </div>
