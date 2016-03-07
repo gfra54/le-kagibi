@@ -22,13 +22,13 @@
 define('DB_NAME', 'lekagibi');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'sopress');
+define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'qpok7510');
+define('DB_PASSWORD', '');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'ari.sopress.net');
+define('DB_HOST', 'localhost');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
