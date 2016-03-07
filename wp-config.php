@@ -21,6 +21,7 @@
 /** Nom de la base de données de WordPress. */
 define('DB_NAME', 'lekagibi');
 
+
 /** Utilisateur de la base de données MySQL. */
 define('DB_USER', 'sopress');
 
