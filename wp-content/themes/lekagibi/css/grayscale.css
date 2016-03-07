@@ -432,6 +432,10 @@ svg {
     float: right;
     margin: 0 1em 1em 0;
 }
+.alignnone {
+    width: 100%;
+    height: auto;
+}
 .entry-image {
     margin-bottom: 1em;
 }
