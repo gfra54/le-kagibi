@@ -2,21 +2,9 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p><small>
+            
+                <?php echo get_page_content('adresses');?>
 
-            <div itemscope itemtype="http://schema.org/Organization">
-                <a itemprop="url" href="http://lekagibi.fr/"><div itemprop="name"><strong>Le Kagibi</strong></div></a>
-                <div style="display:none" itemprop="description">Le Kagibi est un espace de bureau partagé par des indépendants, salariés, ingénieurs et architectes qui préfère ne pas travailler en pyjama à la maison. A mi-chemin entre le professionnalisme du coworking et la douceur de la maison, le Kagibi réunit le meilleur des deux mondes.</div>
-                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">3, rue GrandVille</span><br>
-                <span itemprop="postalCode">54000</span>
-                <span itemprop="addressLocality">Nancy</span>
-                (<span itemprop="addressCountry">France</span>)
-                </div>
-            </div>
-
-
-            </small></p>
         </div>
     </footer>
 
