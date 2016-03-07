@@ -17,10 +17,15 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+        if($anchor.attr('href').split('#').length) {
+            _target = '#'+$anchor.attr('href').split('#')[1];
+            if($(_target).length) {
+                $('html, body').stop().animate({
+                    scrollTop: $(_target).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            }
+        }
     });
 });
 

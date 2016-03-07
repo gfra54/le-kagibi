@@ -1,6 +1,7 @@
 <?php
 function logo_kagibi(){
-	readfile(get_template_directory().'/images/logo.svg');	
+	echo '<img src="'.get_template_directory_uri().'/images/logo_kagibi_slogan_white.png">';
+//	readfile(get_template_directory().'/images/logo.svg');	
 }
 function chemin_site() {
 	return realpath(dirname(__FILE__).'/../../../../');

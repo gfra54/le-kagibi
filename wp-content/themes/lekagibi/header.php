@@ -75,8 +75,8 @@ if ( $paged >= 2 || $page >= 2 )
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i>  <span class="light">Bienvenue au</span> Kagibi
+                    <a class="navbar-brand page-scroll" href="/#page-top">
+                        <i class="fa fa-building"></i>  <span class="light">Bienvenue au</span> Kagibi
                     </a>
                 </div>
 
@@ -87,15 +87,11 @@ if ( $paged >= 2 || $page >= 2 )
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
+                        <?php foreach(getMenu('primary') as $item) {?>
                         <li>
-                            <a class="page-scroll" href="#about">à propos</a>
+                            <a class="page-scroll" href="<?php echo $item->url;?>"><?php echo $item->title;?></a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="#join-us">Nous rejoindre</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
+                        <?php }?>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

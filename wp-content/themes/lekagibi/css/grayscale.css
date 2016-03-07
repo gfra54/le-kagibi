@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #14A3C7;
 }
@@ -423,3 +423,24 @@ svg {
     width: 100%;
 }
 
+
+.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+.alignright {
+    float: right;
+    margin: 0 1em 1em 0;
+}
+.entry-image {
+    margin-bottom: 1em;
+}
+.entry-image IMG{
+    display:block;
+    width: 100%;
+    height: auto;
+}
+
+.brand-heading IMG {
+    max-width: 100%;
+}
