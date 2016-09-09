@@ -57,7 +57,7 @@ if ( $paged >= 2 || $page >= 2 )
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <meta property="og:image" content="<?php echo site_url();?>/wp-content/themes/lekagibi/images/le-kagibi.jpg">
+    <meta property="og:image" content="<?php echo site_url();?>/wp-content/uploads/2016/03/2016-03-04-10_25_36-1-Rue-du-Joli-C%C5%93ur-Google-Maps-1024x678.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:title" content="Le Kagibi coworking" >
 
@@ -71,7 +71,7 @@ if ( $paged >= 2 || $page >= 2 )
     <meta name="twitter:creator" content="@kagibicowo">
     <meta name="twitter:title" content="lekagibi.fr">
     <meta name="twitter:description" content="Le Kagibi n'est pas qu'un bureau, et n'est pas totalement un espace de coworking. Il est pour l'instant occupé par des architectes, des graphistes, des développeurs web et des ingénieurs. Pour en savoir plus, consultez notre page de présentation.">
-    <meta name="twitter:image" content="<?php echo site_url();?>/wp-content/themes/lekagibi/images/le-kagibi.jpg">
+    <meta name="twitter:image" content="<?php echo site_url();?>/wp-content/uploads/2016/03/2016-03-04-10_25_36-1-Rue-du-Joli-C%C5%93ur-Google-Maps-1024x678.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
